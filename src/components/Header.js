@@ -1,32 +1,31 @@
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
-// import ReactDOM from 'react-dom';
-import "./NavbarStyles.css";
+import React from "react";
+import "./HeaderStyles.css";
+import bedroom_img from "../images/bedroom2.jpg";
 
 function Header() {
-    const [isClicked,setIsClicked] = useState('false');
-    const handleClick = () => {
-        setIsClicked(prevState => !prevState);
-    }
     return(
         <>
-            <nav>
-                <a href="logo.png" className="nav-logo"></a>
+            <header>
                 <div>
-                    <ul id="navbar" className={isClicked ? "#navbar active" : "#navbar"}>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Projects</a></li>
-                    </ul>
+                    <div className="header-container">
+                        <div className="header-content">
+                            <h1>Creating beautiful spaces for beautiful lives.</h1>
+                            <p>Discover a world of creative interiors. From luxurious homes to inspiring workplaces,<br/>we bring your vision to life with quality and innovation. Let's create extraordinary spaces together.</p>
+                            <button className="btn">Contact Us</button>
+                        </div>
+                        <div className="header-img">
+                            <img src={bedroom_img} alt="header-img"/>
+                        </div>
+                    </div>
+                    {/* <div className="stats-ul">
+                        <ul className="stats">
+                            <li>150+ Projects complete</li>
+                            <li>250+ Satisfied clients</li>
+                            <li>100+ Unique Styles</li>
+                        </ul>
+                    </div> */}
                 </div>
-                <a href="#" className="nav-contact">
-                    Contact Us
-                </a>
-
-                <div id="mobile" onClick={handleClick}>
-                    <i className={isClicked ? "fas fa-times" : "fas fa-bars"}></i>
-                </div>
-            </nav>
+            </header>
         </>
     );
 }
