@@ -17,13 +17,13 @@ function Header() {
                             <img src={bedroom_img} alt="header-img"/>
                         </div>
                     </div>
-                    {/* <div className="stats-ul">
+                    <div className="stats-ul">
                         <ul className="stats">
                             <li>150+ Projects complete</li>
                             <li>250+ Satisfied clients</li>
                             <li>100+ Unique Styles</li>
                         </ul>
-                    </div> */}
+                    </div>
                 </div>
             </header>
         </>
