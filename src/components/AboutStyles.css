@@ -1,0 +1,69 @@
+.about-us{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us h1{
+    color: #646464;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px; /* 83.333% */
+}
+
+.about-us img{
+    width: 450px;
+    height: 425px;
+    border-radius: 90px 5px 90px 5px;
+    flex-shrink:0;
+}
+
+.about-us p{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
+}
+
+.read-more{
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #299C27;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.experience h1{
+    /* font-family: "Open Sans"; */
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 9.722% */
+    letter-spacing: -2.88px;
+    /* background: url('../images/bedroom2.jpg') no-repeat; */
+}
+
+.experience img{
+    width: 450px;
+    height: 425px;
+    border-radius: 90px 5px 90px 5px;
+    flex-shrink:0;
+}
+
+.experience h2{
+    color: #212121;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px; /* 130% */
+    letter-spacing: 2px;
+}

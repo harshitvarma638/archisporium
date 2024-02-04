@@ -1,0 +1,84 @@
+.testimonial{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 10px;
+    width: 100%;
+    max-width: 100%;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer; */
+}
+
+.testimonial h1{
+    color: #3e3c3c;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.testimonial p{
+    color: #212121;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card{
+    h1{
+        color: #212121;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    p{
+        color: #646464;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+    }
+}
+
+.news{
+    h1{
+        color: #212121;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 58.333% */
+        letter-spacing: 3.84px;
+    }
+    p{
+        color: #646464;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 155.556% */
+    }
+    .email{
+        width: 600px;
+        height: 50px;
+        background: #EEE;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .submit-btn{
+        width: 180px;
+        height: 50px;
+        background: #37806B;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
