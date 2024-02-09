@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from "../images/logo.svg";
 import "./FooterStyles.css";
 
 function Footer() {
@@ -9,7 +8,7 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-4 col-lg-5 col-12 ft-1">
-                        <img src={logo} alt = "logo" width="230px" height="150px"></img>
+                        <img src="../images/logo.svg" alt = "logo" width="230px" height="150px"></img>
                         <div className="footer-icon">
                             <h4>Follow Us</h4>
                             <i className="fa-brands fa-facebook fa-2x"></i>

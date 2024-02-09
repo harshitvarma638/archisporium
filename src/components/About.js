@@ -1,14 +1,11 @@
 import React from "react";
 import "./AboutStyles.css";
-import about_img from "../images/kitchen3.jpg";
-import about_img2 from "../images/living_area.jpg";
-
 
 function About() {
     return(
         <>
             <div className="about-us">
-                <img src={about_img} alt="about"/>
+                <img src="../images/kitchen3.jpg" alt="about"/>
                 <h1>About Us</h1>
                 <p>There are many variations of passages of Lorem Ipsum available,
 but the majority have suffered alteration in some form injected
@@ -23,7 +20,7 @@ generator on the Internet.</p>
             <div className="experience">
                 <h1>16</h1>
                 <h2>Years Of Successful<br/>Working in<br/>The Market</h2>
-                <img src={about_img2} alt="about2" width="500px" height="475px"/>
+                <img src="../images/living_area.jpg" alt="about2" width="500px" height="475px"/>
             </div>
         </>
     );

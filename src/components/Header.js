@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeaderStyles.css";
-import bedroom_img from "../images/bedroom2.jpg";
 
 function Header() {
     return(
@@ -16,7 +15,7 @@ function Header() {
                             <button className="btn-contact">Contact Us</button>
                         </div>
                         <div className="header-img">
-                            <img src={bedroom_img} alt="header-img"/>
+                            <img src="../images/bedroom2.jpg" alt="header-img"/>
                         </div>
                     </div>
                     <div className="stats-ul">
