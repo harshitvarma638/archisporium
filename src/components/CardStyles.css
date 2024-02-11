@@ -1,4 +1,4 @@
-html,
+ html,
 body {
   position: relative;
   height: 100%;
@@ -9,18 +9,18 @@ body {
   height: 100%;
 }
 
-.swiper-slide {
+.swiper_slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
 
   /* Center slide text vertically */
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper_slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@ body {
   margin-right: auto;
 }
 
-.swiper-slide {
+.swiper_slide {
   background-size: cover;
   background-position: center;
 }
@@ -50,21 +50,24 @@ body {
   padding: 10px 0;
 }
 
-.mySwiper .swiper-slide {
+.mySwiper .swiper_slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
 
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
 
-.swiper-slide img {
+
+.swiper_slide img {
   display: block;
   width: 800px;
   height: 500px;
   border: 0px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.card{
+  display:flex;
+  flex-direction:column;
 }
