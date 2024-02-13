@@ -59,6 +59,11 @@ header {
     line-height: normal;
 }
 
+.link-style{
+    text-decoration: none;
+    color: #fff;
+}
+
 .btn-contact{
     width: 180px;
     height: 60px;
@@ -93,12 +98,20 @@ header {
     list-style: none;
 }
 
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
 .stats li{
     width: 180px;
     height: 110px;
     flex-shrink: 0;
     color: #545454;
-    text-align: center;
+    /* text-align: center; */
     font-family: Inter;
     font-size: 70px;
     font-style: normal;
