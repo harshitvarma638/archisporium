@@ -218,7 +218,7 @@
     }
     .submit-btn{
         width: 100%;
-        min-width: 75px;
+        min-width: 100px;
         height: 50px;
         padding: 10px;
         background: #37806B;
@@ -238,11 +238,11 @@
     }
     .news .email{
         /* width: 100%; */
-        min-width: 350px;
+        min-width: 300px;
     }
     .news .submit-btn{
         /* width: 100%; */
-        min-width: 100px;
+        min-width: 75px;
     }
 }
 
@@ -257,9 +257,9 @@
         }
     }
     .news .email{
-        min-width: 250px;
+        min-width: 200px;
     }
     .news .submit-btn{
-        min-width: 100px;
+        min-width: 50px;
     }
 }
