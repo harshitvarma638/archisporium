@@ -175,13 +175,28 @@
 }
 
 .news{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.news form{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.news{
     h1{
         color: #212121;
         font-family: Poppins;
         font-size: 48px;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px; /* 58.333% */
         letter-spacing: 3.84px;
     }
     p{
@@ -191,18 +206,60 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
-        line-height: 28px; /* 155.556% */
+        /* line-height: 28px; 155.556% */
     }
     .email{
-        width: 600px;
+        width: 100%;
+        min-width: 450px;
         height: 50px;
         background: #EEE;
+        padding: 10px;
         border-radius: 20px 0px 0px 20px;
     }
     .submit-btn{
-        width: 180px;
+        width: 100%;
+        min-width: 75px;
         height: 50px;
+        padding: 10px;
         background: #37806B;
         border-radius: 0px 20px 20px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news{
+        h1{
+            font-size: 30px;
+            letter-spacing: 2.88px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .news .email{
+        /* width: 100%; */
+        min-width: 350px;
+    }
+    .news .submit-btn{
+        /* width: 100%; */
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .news{
+        h1{
+            font-size: 24px;
+            letter-spacing: 1.92px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .news .email{
+        min-width: 250px;
+    }
+    .news .submit-btn{
+        min-width: 100px;
     }
 }

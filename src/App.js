@@ -6,6 +6,7 @@ import Testimonials from './components/Testimonials';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import Card from './components/Card';
+import Contact from './components/Contact';
 import data from './data';
 import {BrowserRouter as Router, Route, Switch,Routes} from 'react-router-dom';
 
@@ -42,6 +43,7 @@ function ProjectPage() {
 function ContactPage() {
   return (
     <>
+      <Contact />
       <Newsletter />
     </>
   );

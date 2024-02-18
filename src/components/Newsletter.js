@@ -53,7 +53,7 @@ function Newsletter() {
                 <p>Find out early about all upcoming projects and new designs with our newsletter.</p>
                 <form onSubmit={handleSubmit}>
                     <input type="email" value={email} placeholder="Enter your email" className="email" onChange={(e) => setEmail(e.target.value)}/>
-                    <button type="submit" className="submit-btn">Subscribe</button>
+                    <span><button type="submit" className="submit-btn">Subscribe</button></span>
                 </form>
             </div>
         </>
