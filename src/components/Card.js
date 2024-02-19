@@ -1,5 +1,4 @@
 import {React,useState} from "react";
-import {Col, Row} from "react-bootstrap";
 import {Button,Modal} from "antd";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -21,17 +20,17 @@ export default function Card(props) {
     };
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const images1 = props.images;
-    const images2 = props.images;
+    // const images2 = props.images;
     return (
-        <Row>
-            <Col xs={12} sm={12} md={6} lg={4} xl={4}>
-            <div className="card">
-                <img src={props.coverImg} alt="cover" style={{ width: '300px', height: '250px', objectFit: 'cover' }}/>
-                <h3>{props.title}</h3>
-                <p>{props.address}</p>
-                <Button type="primary" onClick={showModal}>
-                    Know More
-                </Button>
+        <div className="card">
+                <img src={props.coverImg} alt="cover" />
+                <div className="card-content">
+                    <h3>{props.title}</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>{props.address}</p>
+                    <Button type="primary" onClick={showModal}>
+                        Know More
+                    </Button>
+                </div>
                 <Modal
                     visible={isModalOpen}
                     footer={null} // Removing the default footer buttons
@@ -80,9 +79,5 @@ export default function Card(props) {
                     <Button type="primary" onClick={handleClose}>Close</Button>
                 </Modal>
             </div>
-            
-            </Col>
-        </Row>
-        
     )
 }

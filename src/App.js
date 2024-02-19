@@ -15,7 +15,9 @@ function HomePage() {
     <>
       <Header/>
       <About />
-      {cards}
+      <div className="card-container">
+        {cards}
+      </div>
       <Testimonials />
       <Newsletter />
     </>
@@ -34,7 +36,9 @@ function aboutpage() {
 function ProjectPage() {
   return (
     <>
-      {cards}
+      <div className="card-container">
+        {cards}
+      </div>
       <Newsletter />
     </>
   );

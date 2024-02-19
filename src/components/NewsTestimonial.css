@@ -86,12 +86,16 @@
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
 }
+
+/* .swiper-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+} */
   
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    
     /* Center slide text vertically */
     flex-direction: column;
     display: -webkit-box;
@@ -107,6 +111,8 @@
     -webkit-align-items: center;
     align-items: center;
     margin-bottom: 5rem;
+    /* width: auto; */
+    /* margin: 5px 5px; */
 }
   
 .swiper-slide img {
@@ -172,6 +178,80 @@
 .swiper-client-data p:first-child {
     font-weight: bold;
     color: var(--heading);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .testimonial h2 {
+        font-weight: 700;
+        font-size: 2.8rem;
+        padding: 10px;
+    }
+    .common-heading::after{
+        top: 125%;
+    }
+
+    .swiper-slide{
+        margin-bottom: 3rem;
+    }
+    .swiper-client-msg {
+        padding: 3rem 5rem;
+    }
+    .swiper-client-msg p::before {
+        font-size: 2.8rem;
+    }
+    .swiper-client-msg p::after {
+        font-size: 2.8rem;
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .testimonial h2 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    .common-heading::after{
+        top: 125%;
+    }
+
+    .swiper-slide{
+        margin-bottom: 3rem;
+    }
+    .swiper-client-msg {
+        padding: 3rem 4rem;
+    }
+    .swiper-client-msg p::before {
+        font-size: 2.3rem;
+    }
+    .swiper-client-msg p::after {
+        font-size: 2.3rem;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .testimonial h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .swiper-slide{
+        margin-bottom: 2rem;
+    }
+    .swiper-client-msg {
+        padding: 3rem 4rem;
+        max-width: 350px;
+    }
+    .swiper-client-msg p::before {
+        font-size: 2rem;
+    }
+    .swiper-client-msg p::after {
+        font-size: 2rem;
+        
+    }
 }
 
 .news{
@@ -250,7 +330,7 @@
     .news{
         h1{
             font-size: 24px;
-            letter-spacing: 1.92px;
+            letter-spacing: 1px;
         }
         p{
             font-size: 14px;

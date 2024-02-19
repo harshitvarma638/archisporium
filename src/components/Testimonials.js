@@ -33,152 +33,158 @@ export default function Testimonials() {
         <div className="testimonial container">
             <h2 className="common-heading">Happy Client Works!!</h2>
         </div>
-      <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        className="mySwiper swiper"
-        onMouseEnter = {()=>setIsMouseOver(true)}
-        onMouseLeave={()=>setIsMouseOver(false)}
-      >
-        <div className="swiper-wrapper">
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          }}
+          className="mySwiper swiper"
+          onMouseEnter = {()=>setIsMouseOver(true)}
+          onMouseLeave={()=>setIsMouseOver(false)}
+        >
+          <div className="swiper-wrapper">
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="swiper-slide">
-            <div className="swiper-client-msg">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.</p>
-            </div>
-            <div className="swiper-client-data grid grid-two-col">
-              <figure>
-                <img src={image} alt="client-1" />
-              </figure>
-              <div className="client-data-details">
-                <p>Harshith Varma</p>
-                <p>Entrepreneur</p>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        </div>
-      </Swiper>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
+              </div>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
+              </div>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
+              </div>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-client-msg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed ut perspiciatis</p>
+              </div>
+              <div className="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img src={image} alt="client-1" />
+                </figure>
+                <div className="client-data-details">
+                  <p>Harshith Varma</p>
+                  <p>Entrepreneur</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </div>
+        </Swiper>
     </>
   );
 }
