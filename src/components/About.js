@@ -4,9 +4,11 @@ import "./AboutStyles.css";
 function About() {
     return(
         <>
-            <div className="about-us">
-                <img className="col-lg-5 col-md-4" src="../images/kitchen3.jpg" alt="about"/>
-                <div className="about_us2">
+            <div className="box2">
+                <div className="about-img">
+                    <img className="col-lg-5 col-md-4" src="../images/kitchen3.jpg" alt="about"/>
+                </div>
+                <div className="about_us">
                     <h1>About Us</h1>
                     <p>There are many variations of passages of Lorem Ipsum available,
     but the majority have suffered alteration in some form injected
@@ -15,13 +17,19 @@ function About() {
     sure there isn't anything embarrassing hidden the middleof text.
     All the Lorem Ipsum generators on the Internettend to repeat
     predefined chunks as necessary,making this the first true
+    generator on the Internet.Ipsum generators on the Internettend to repeat
+    predefined chunks as necessary,making this the first true
     generator on the Internet.</p>
                 </div>
             </div>
-            <div className="experience">
-                <h1>16</h1>
-                <h2>Years Of Successful<br/>Working in<br/>The Market</h2>
-                <img src="../images/living_area.jpg" alt="about2" width="500px" height="475px"/>
+            <div className="box3">
+                <div className="experience">
+                    <h1>10</h1>
+                    <h2>Years Of Successful<br/>Working in<br/>The Market</h2>
+                </div>
+                <div className="experience-img">
+                    <img src="../images/living_area.jpg" alt="about2" width="450px" height="425px"/>
+                </div>
             </div>
         </>
     );

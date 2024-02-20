@@ -1,4 +1,5 @@
 import './App.css';
+import {React, useState} from "react";
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
@@ -10,13 +11,29 @@ import Contact from './components/Contact';
 import data from './data';
 import {BrowserRouter as Router, Route, Switch,Routes} from 'react-router-dom';
 
+const projectData = data;
+
 function HomePage() {
+  const [projectType, setProjectType] = useState("Residential");
+
+  const filteredProjects = projectData.filter(project => project.type === projectType);
   return (
     <>
       <Header/>
       <About />
-      <div className="card-container">
-        {cards}
+      <div className="projects">
+        <div className="project-title">
+          <h1>Our Projects</h1>
+        </div>
+        <div className="project-selection">
+          <button onClick={()=> setProjectType("Residential")}>Residential</button>
+          <button onClick={() => setProjectType("Commercial")}>Commercial</button>
+        </div>
+        <div className="card-container">
+          {/* {filteredProjects.map((project,index) => ( */}
+            {cards}
+          {/* // ))} */}
+        </div>
       </div>
       <Testimonials />
       <Newsletter />
@@ -37,6 +54,7 @@ function ProjectPage() {
   return (
     <>
       <div className="card-container">
+        
         {cards}
       </div>
       <Newsletter />

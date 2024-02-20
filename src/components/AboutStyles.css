@@ -1,20 +1,54 @@
-.about-us{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.about-img {
+    grid-area: about-img;
 }
 
-.about_us2{
+.about_us{
+    grid-area: about_us;
+}
+
+.experience{
+    grid-area: experience;
+}
+
+.experience-img{
+    grid-area: experience-img;
+}
+
+.box2{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "about-img about_us";
+    grid-gap: 20px;
+}
+
+.box3{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "experience experience-img";
+    grid-gap: 20px;
+
+}
+.about_us{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
-
+    width: 100%;
+    padding: 35px;
 }
 
-.about-us2 h1{
+
+.about_us h1{
     color: #646464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
@@ -22,32 +56,33 @@
     line-height: 30px; /* 83.333% */
 }
 
-.about-us img{
-    width: 450px;
-    height: 425px;
-    border-radius: 90px 5px 90px 5px;
-    flex-shrink:0;
+.about-img{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-us2 p{
+.about-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 70px 5px 70px 5px;
+}
+
+.about_us p{
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 166.667% */
+    text-align: justify;
+    padding: 20px;
 }
 
-.read-more{
-    width: 200px;
-    height: 60px;
-    flex-shrink: 0;
-    background: #299C27;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
+.experience{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
 }
 
 .experience h1{
@@ -55,16 +90,9 @@
     font-size: 130px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 9.722% */
+    padding: 30px 30px 5px 30px;
     letter-spacing: -2.88px;
     /* background: url('../images/bedroom2.jpg') no-repeat; */
-}
-
-.experience img{
-    width: 450px;
-    height: 425px;
-    border-radius: 90px 5px 90px 5px;
-    flex-shrink:0;
 }
 
 .experience h2{
@@ -73,6 +101,22 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
+    padding: 5px 30px 30px 30px;
     line-height: 65px; /* 130% */
     letter-spacing: 2px;
 }
+
+.experience-img{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px 70px 5px 70px;
+    flex-shrink:0;
+}
+
