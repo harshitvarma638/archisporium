@@ -30,9 +30,17 @@ function HomePage() {
           <button onClick={() => setProjectType("Commercial")}>Commercial</button>
         </div>
         <div className="card-container">
-          {/* {filteredProjects.map((project,index) => ( */}
-            {cards}
-          {/* // ))} */}
+          {filteredProjects.map((project,index) => (
+            <Card
+              key={index}
+              coverImg={project.coverImg}
+              title={project.title}
+              address={project.address}
+              images={project.images}
+              description={project.description}  
+            >
+            </Card>
+          ))}
         </div>
       </div>
       <Testimonials />
@@ -51,11 +59,32 @@ function aboutpage() {
 }
 
 function ProjectPage() {
+  const [projectType, setProjectType] = useState("Residential");
+
+  const filteredProjects = projectData.filter(project => project.type === projectType);
   return (
     <>
-      <div className="card-container">
-        
-        {cards}
+      <div className="projects">
+        <div className="project-title">
+          <h1>Our Projects</h1>
+        </div>
+        <div className="project-selection">
+          <button onClick={()=> setProjectType("Residential")}>Residential</button>
+          <button onClick={() => setProjectType("Commercial")}>Commercial</button>
+        </div>
+        <div className="card-container">
+          {filteredProjects.map((project,index) => (
+            <Card
+              key={index}
+              coverImg={project.coverImg}
+              title={project.title}
+              address={project.address}
+              images={project.images}
+              description={project.description}  
+            >
+            </Card>
+          ))}
+        </div>
       </div>
       <Newsletter />
     </>
@@ -71,19 +100,19 @@ function ContactPage() {
   );
 }
 
-const cards = data.map((card, index) => {
-  return (
-    <Card
-      key={index}
-      coverImg={card.coverImg}
-      title={card.title}
-      address={card.address}
-      images={card.images}
-      description={card.description}  
-    >
-    </Card>
-  );
-});
+// const card = data.map((card, index) => {
+//   return (
+//             <Card
+//               key={index}
+//               coverImg={card.coverImg}
+//               title={card.title}
+//               address={card.address}
+//               images={card.images}
+//               description={card.description}  
+//             >
+//             </Card>
+//   );
+// });
 
 function App() {
   
