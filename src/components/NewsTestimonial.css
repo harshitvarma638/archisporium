@@ -85,6 +85,7 @@
     max-width: 140rem;
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
+    padding: 2rem;
 }
 
 /* .swiper-wrapper{
@@ -341,5 +342,17 @@
     }
     .news .submit-btn{
         min-width: 50px;
+    }
+}
+
+@media screen and (max-width: 361px){
+    .news .email{
+        min-width: 160px;
+    }
+    .news .submit-btn{
+        min-width: 40px;
+    }
+    .news form{
+        padding: 20px;
     }
 }

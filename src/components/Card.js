@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { Zoom, Navigation, Pagination } from 'swiper/modules';
 import './CardStyles.css';
 
 export default function Card(props) {
@@ -18,9 +18,6 @@ export default function Card(props) {
     const handleClose = () => {
         setIsModalOpen(false);
     };
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    const images1 = props.images;
-    // const images2 = props.images;
     return (
         <div className="card">
                 <img src={props.coverImg} alt="cover" />
@@ -38,38 +35,25 @@ export default function Card(props) {
                     width={1300}
                     // height={800}
                 >
-                  <Swiper
+                    <Swiper
                         style={{
                         '--swiper-navigation-color': '#000',
                         '--swiper-pagination-color': '#000',
                         }}
-                        spaceBetween={10}
+                        zoom={true}
                         navigation={true}
-                        thumbs={{ swiper: thumbsSwiper }}
-                        modules={[FreeMode, Navigation, Thumbs]}
+                        pagination={{
+                        clickable: true,
+                        }}
+                        modules={[Zoom, Navigation, Pagination]}
                         className="mySwiper2"
                     >
-                        {images1 && images1.map((image, index) => (
-                        <SwiperSlide key={index} className="swiper_slide">
-                            <img src={image} alt="cover"/>
-                        </SwiperSlide>
-                        ))}
+                                {props.images && props.images.map((image, index) => (
+                            <SwiperSlide key={index} className="card_slide">
+                                <img src={image} alt="cover"/>
+                            </SwiperSlide>
+                            ))} 
                     </Swiper>
-                    {/* <Swiper
-                        onSwiper={setThumbsSwiper}
-                        spaceBetween={10}
-                        slidesPerView={4}
-                        freeMode={true}
-                        watchSlidesProgress={true}
-                        modules={[FreeMode, Navigation,]}
-                        className="mySwiper"
-                    >
-                        {images2 && images2.map((image, index) => (
-                        <SwiperSlide key={index} className="swiper-slide">
-                            <img src={image} alt="cover"/>
-                        </SwiperSlide>
-                        ))}
-                    </Swiper>  */}
                     
                     <div>
                         <h2>{props.title}</h2>
@@ -81,3 +65,5 @@ export default function Card(props) {
             </div>
     )
 }
+
+

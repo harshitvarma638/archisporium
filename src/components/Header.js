@@ -6,15 +6,19 @@ import {Link} from "react-router-dom";
 function Header() {
     return(
         <>
-            <header>
-                <div className="box">
+                <div className="box1">
                     <div className="header-container intro">
                         <div className="header-content">
-                            <h3>MODERN INTERIOR</h3>
-                            <h1>Creating beautiful spaces for beautiful lives.</h1>
-                            <p>Discover a world of creative interiors. From luxurious homes to inspiring workplaces,<br/>we bring your vision to life with quality and innovation. Let's create extraordinary spaces together.</p>
-                            <button className="btn-project"><Link to="/projects" className="link-style">Our Projects</Link></button>
-                            <button className="btn-contact"><Link to="/contact" className="link-style">Contact Us</Link></button>
+                            <div className="content">
+                                <h3>MODERN INTERIOR</h3>
+                                <h1>Creating beautiful spaces for beautiful lives.</h1>
+                                <p>Discover a world of creative interiors. From luxurious homes to inspiring workplaces,<br/>we bring your vision to life with quality and innovation. Let's create extraordinary spaces together.</p>
+                            </div>
+                            <div className="buttons">
+                                <button className="btn-project"><Link to="/projects" className="link-style">Our Projects</Link></button>
+                                <button className="btn-contact"><Link to="/contact" className="link-style">Contact Us</Link></button>
+                            </div>
+                            
                         </div>
                     </div>
                     <div className="header-img intro-img">
@@ -30,7 +34,6 @@ function Header() {
                         </div>
                     </div>
                 </div>
-            </header>
         </>
     );
 }

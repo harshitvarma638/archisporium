@@ -26,8 +26,8 @@ function HomePage() {
           <h1>Our Projects</h1>
         </div>
         <div className="project-selection">
-          <button onClick={()=> setProjectType("Residential")}>Residential</button>
-          <button onClick={() => setProjectType("Commercial")}>Commercial</button>
+          <button onClick={() => setProjectType("Residential")} className={`project-btn ${projectType === "Residential" ? "project-active" : "project-nonactive"}`}>Residential</button>
+          <button onClick={() => setProjectType("Commercial")} className={`project-btn ${projectType === "Commercial" ? "project-active" : "project-nonactive"}`}>Commercial</button>
         </div>
         <div className="card-container">
           {filteredProjects.map((project,index) => (
@@ -53,7 +53,7 @@ function aboutpage() {
   return (
     <>
       <About/>
-      <Newsletter />
+      <Testimonials />
     </>
   );
 }
@@ -69,8 +69,8 @@ function ProjectPage() {
           <h1>Our Projects</h1>
         </div>
         <div className="project-selection">
-          <button onClick={()=> setProjectType("Residential")}>Residential</button>
-          <button onClick={() => setProjectType("Commercial")}>Commercial</button>
+          <button onClick={()=> setProjectType("Residential")} className="project-btn">Residential</button>
+          <button onClick={() => setProjectType("Commercial")} className="project-btn">Commercial</button>
         </div>
         <div className="card-container">
           {filteredProjects.map((project,index) => (

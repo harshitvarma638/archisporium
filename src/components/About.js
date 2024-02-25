@@ -6,7 +6,7 @@ function About() {
         <>
             <div className="box2">
                 <div className="about-img">
-                    <img className="col-lg-5 col-md-4" src="../images/kitchen3.jpg" alt="about"/>
+                    <img src="../images/kitchen3.jpg" alt="about"/>
                 </div>
                 <div className="about_us">
                     <h1>About Us</h1>
@@ -24,11 +24,11 @@ function About() {
             </div>
             <div className="box3">
                 <div className="experience">
-                    <h1>10</h1>
+                    <h1>15</h1>
                     <h2>Years Of Successful<br/>Working in<br/>The Market</h2>
                 </div>
                 <div className="experience-img">
-                    <img src="../images/living_area.jpg" alt="about2" width="450px" height="425px"/>
+                    <img src="../images/living_area.jpg" alt="about2"/>
                 </div>
             </div>
         </>
