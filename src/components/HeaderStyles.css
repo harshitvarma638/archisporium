@@ -153,6 +153,7 @@ ol,ul{
 
 .numbers .stats{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -227,9 +228,9 @@ ol,ul{
         grid-gap: 10px;
     }
 
-    /* .into,.intro-img,.nums{
-        grid-column: 1;
-    } */
+    .header-container{
+        padding-bottom: 3px;
+    }
 
     .header-img img{
         width: 300px;
@@ -287,11 +288,9 @@ ol,ul{
         grid-gap: 10px;
     }
 
-    /* .intro,
-    .intro-img,
-    .nums {
-        grid-column: 1;
-    } */
+    .header-container{
+        padding-bottom: 0px;
+    }
     .header-img img {
         margin: 0 10px;
         width: 250px;
@@ -319,8 +318,13 @@ ol,ul{
         font-size: 14px;
         margin: 10px;
     }
+    .numbers{
+        padding-left: 30px;
+    }
     .numbers .stats li{
-        font-size: 20px
+        font-size: 20px;
+        width: 90px;
+        height: 70px;
     }
     .numbers .stats li p{
         font-size: 16px;
@@ -341,15 +345,16 @@ ol,ul{
         grid-gap: 5px;
     }
 
-    /* .intro,
-    .intro-img,
-    .nums {
-        grid-column: 1;
-        width: 100%;
-    } */
+    .header-container{
+        padding-bottom: 0px;
+    }
     .header-content{
         padding: 10px 10px 10px 10px;
         /* max-width: 330px; */
+    }
+    .header-content .content{
+        padding: 15px;
+        padding-bottom: 0px;
     }
     .header-content .content h1{
         font-size: 18px;
@@ -357,26 +362,39 @@ ol,ul{
     .header-content .content p{
         font-size: 14px;
     }
+    .header-content .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     .header-content .buttons .btn-contact{
         width: 90px;
         height: 35px;
         font-size: 13px;
         margin: 10px;
+        padding: 5px;
     }
     .header-content .buttons .btn-project{
         width: 90px;
         height: 35px;
         font-size: 13px;
         margin: 10px;
+        padding: 5px;
     }
     .header-img img{
         width: 180px;
         height: 180px;
         border-radius: 30px 5px 30px 5px;
     }
+    .numbers{
+        padding-left: 25px;
+    }
     
     .numbers .stats li{
-        font-size: 20px
+        font-size: 20px;
+        width: 80px;
+        height: 60px;
     }
     .numbers .stats li p{
         font-size: 16px;

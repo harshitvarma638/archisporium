@@ -1,3 +1,7 @@
+p{
+    margin-bottom: 0px;
+}
+
 .about-img {
     grid-area: about-img;
 }
@@ -120,6 +124,11 @@
     flex-shrink:0;
 }
 
+h1{
+    margin-bottom: 0px;
+
+}
+
 @media screen and (max-width: 1024px) {
     .box2{
         grid-gap: 0px;
@@ -156,6 +165,7 @@
     .experience h1{
         font-size: 80px;
         padding: 10px;
+        padding-bottom: 6px;
     }
 
     .experience h2{
@@ -186,7 +196,7 @@
 
     .box3{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1.3fr;
+        grid-template-rows: 1fr 1.1fr;
         grid-template-areas: 
         "experience"
         "experience-img";
@@ -195,6 +205,8 @@
     .about-img{
         display: flex;
         padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         justify-content: center;
         align-items: center;
     }
@@ -205,7 +217,7 @@
     }
     .about-us{
         max-width: 100%;
-        padding: 20px 20px 5px 20px;
+        padding: 20px 30px 5px 30px;
     }
 
     .about_us h1{
@@ -214,10 +226,13 @@
 
     .about_us p{
         font-size: 18px;
+        padding-bottom: 0px;
     }
 
     .experience{
         padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
     .experience-img{
         padding: 10px;
@@ -230,6 +245,7 @@
     .experience h1{
         font-size: 60px;
         padding: 10px;
+        padding-bottom: 2px;
     }
 
     .experience h2{
@@ -261,6 +277,8 @@
         padding: 20px;
         justify-content: center;
         align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .about-img img{
         width: 300px;
@@ -280,10 +298,12 @@
 
     .about_us p{
         font-size: 18px;
+        padding-bottom: 0px;
     }
 
     .experience{
         padding-bottom: 0px;
+        padding-left:40px;
     }
     .experience-img{
         padding-top: 0px;
@@ -296,6 +316,7 @@
     .experience h1{
         font-size: 60px;
         padding-top: 2px;
+        padding-bottom: 2px;
     }
 
     .experience h2{
@@ -305,17 +326,44 @@
 }
 
 @media screen and (max-width: 360px){
+    .box2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+        "about_us"
+        "about-img";
+        grid-gap: 0px;
+    }
+
+    .box3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.3fr;
+        grid-template-areas: 
+        "experience"
+        "experience-img";
+        grid-gap: 0px;
+    }
+    
     .about_us h1{
         font-size: 20px;
     }
     .about_us p{
         font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .experience{
+        padding-left: 35px;
     }
     .experience h1{
         font-size: 50px;
+        padding-bottom: 2px;
     }
     .experience h2{
         font-size: 24px;
+    }
+    .about-img{
+        padding-top: 2px;
+        padding-bottom: 5px;
     }
     .about-img img{
         width: 250px;
