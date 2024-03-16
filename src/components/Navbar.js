@@ -13,7 +13,7 @@ function Navbar() {
     return(
         <>
             <nav>
-                <Link to="/" className="nav-logo" title="Logo-of-company"><img src="../images/logo.svg" alt="logo" width="170px" height="90px"/></Link>
+                <Link to="/" className="nav-logo" title="Logo-of-company"><img src="../images/logo.svg" alt="logo" width="250px" height="150px"/></Link>
                 <div>
                     <ul id="navbar" className={isClicked ? "#navbar active" : "#navbar"}>
                         <li><Link to="/">Home</Link></li>
