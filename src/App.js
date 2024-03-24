@@ -1,5 +1,5 @@
 import './App.css';
-import {React, useState} from "react";
+import {React, useState, useEffect, useLayoutEffect} from "react";
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
@@ -8,8 +8,11 @@ import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import Card from './components/Card';
 import Contact from './components/Contact';
+import Collage from './components/collage';
 import data from './data';
 import {BrowserRouter as Router, Route, Switch,Routes} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import NewHeader from './components/NewHeader';
 
 const projectData = data;
 
@@ -17,10 +20,33 @@ function HomePage() {
   const [projectType, setProjectType] = useState("Residential");
 
   const filteredProjects = projectData.filter(project => project.type === projectType);
+
+  const [isSticky, setIsSticky] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (location.pathname === '/') {
+        setIsSticky(window.scrollY < 700);
+        console.log(setIsSticky);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove scroll event listener on component unmount
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [location]);
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
+      <Navbar homePage={true} isSticky={isSticky}/>
+      <NewHeader/>
       <About />
+      <Collage/>
       <div className="projects">
         <div className="project-title">
           <h1>Our Projects</h1>
@@ -52,6 +78,7 @@ function HomePage() {
 function aboutpage() {
   return (
     <>
+      <Navbar homePage={false}/>
       <About/>
       <Testimonials />
     </>
@@ -64,6 +91,7 @@ function ProjectPage() {
   const filteredProjects = projectData.filter(project => project.type === projectType);
   return (
     <>
+      <Navbar homePage={false}/>
       <div className="projects">
         <div className="project-title">
           <h1>Our Projects</h1>
@@ -94,10 +122,25 @@ function ProjectPage() {
 function ContactPage() {
   return (
     <>
+      <Navbar homePage={false}/>
       <Contact />
       <Newsletter />
     </>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 // const card = data.map((card, index) => {
@@ -119,9 +162,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar></Navbar>
+        <ScrollToTop />
         <Routes>
-        <Route path="/" element={HomePage()}/>
+        <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={aboutpage()}/>
         <Route path="/projects" element={ProjectPage()}/>
         <Route path="/contact" element={ContactPage()}/>

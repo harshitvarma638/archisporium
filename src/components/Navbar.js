@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 import "./NavbarStyles.css";
 
 
-function Navbar() {
+function Navbar({ isSticky, homePage }) {
     const [isClicked,setIsClicked] = useState('false');
     const handleClick = () => {
         setIsClicked(prevState => !prevState);
     }
     return(
         <>
-            <nav>
-                <Link to="/" className="nav-logo" title="Logo-of-company"><img src="../images/logo.svg" alt="logo" width="250px" height="150px"/></Link>
+            <nav className={`navbar ${homePage && isSticky ? 'home-page-navbar' : ''}`}>
+                <Link to="/" className="nav-logo" title="Logo-of-company"><img src="../images/logo.svg" alt="logo" width="300px" height="100px"/></Link>
                 <div>
-                    <ul id="navbar" className={isClicked ? "#navbar active" : "#navbar"}>
+                    <ul id="navbar1" className={isClicked ? "#navbar active" : "#navbar"}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/projects">Projects</Link></li>

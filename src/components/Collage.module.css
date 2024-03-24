@@ -1,0 +1,82 @@
+.collageContainer {
+    position: relative;
+}
+
+.collage {
+    display: grid;
+    padding: 3rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    opacity: 0.85;
+    position: relative;
+    z-index: 0;
+    grid-template-areas: 
+        "coll1 coll1 coll2 coll3"
+        "coll4 coll5 coll5 coll3";
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coll1 {
+    grid-area: coll1;
+    height: 300px;
+    width: auto;
+}
+
+.coll2 {
+    grid-area: coll2;
+    height: 300px;
+    width: auto;
+}
+
+.coll3 {
+    grid-area: coll3;
+    height: 600px;
+    width: auto;
+}
+
+.coll4 {
+    grid-area: coll4;
+    height: 300px;
+    width: auto;
+}
+
+.coll5 {
+    grid-area: coll5;
+    height: 300px;
+    width: auto;
+}
+
+.overlap {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    background-color: rgb(207, 152, 96);
+    z-index: 50; /* Places the overlap div in front of the collage div */
+}
+
+.overlap h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.overlap p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

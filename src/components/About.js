@@ -10,16 +10,17 @@ function About() {
                 </div>
                 <div className="about_us">
                     <h1>About Us</h1>
-                    <p>There are many variations of passages of Lorem Ipsum available,
-    but the majority have suffered alteration in some form injected
-    humour, or randomised words which don't look even slightly
-    believable.If you are going to use a passage of Lorem Ipsum,
-    sure there isn't anything embarrassing hidden the middleof text.
-    All the Lorem Ipsum generators on the Internettend to repeat
-    predefined chunks as necessary,making this the first true
-    generator on the Internet.Ipsum generators on the Internettend to repeat
-    predefined chunks as necessary,making this the first true
-    generator on the Internet.</p>
+                    <p>At Archisporium, we believe that every space has the potential to tell a unique story. With a passion for creativity and an
+eye for detail, we specialize in transforming ordinary interiors into extraordinary living experiences.
+With years of experience and a team of talented designers, we pride ourselves on our ability to blend style, functionality,
+and personality into every project we undertake. From cozy residential retreats to dynamic commercial spaces, we tailor
+our designs to suit the specific needs and tastes of each client.<br/><br/>
+Our approach is rooted in collaboration and communication. We work closely with our clients every step of the way,
+listening to their ideas, understanding their vision, and bringing it to life with our expertise and creativity. Whether you're
+looking to refresh a single room or overhaul an entire property, we're here to guide you through the process and ensure
+that the end result exceeds your expectations.With a commitment to quality, integrity, and customer satisfaction, we strive to create spaces that not only look stunning
+but also feel welcoming, comfortable, and uniquely yours. Discover the endless possibilities of interior design with
+Archisporium Let's embark on this exciting journey together!"</p>
                 </div>
             </div>
             <div className="box3">

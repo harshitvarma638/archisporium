@@ -257,7 +257,7 @@ h1{
 @media (max-width: 450px) {
     .box2{
         grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 1fr;
+        grid-template-rows: 1fr 0.4fr;
         grid-template-areas: 
         "about_us"
         "about-img";
@@ -266,7 +266,7 @@ h1{
 
     .box3{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1.3fr;
+        grid-template-rows: 1.1fr 1.3fr;
         grid-template-areas: 
         "experience"
         "experience-img";
